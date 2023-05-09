@@ -1,10 +1,17 @@
 * {
     font-family: 'Poppins', sans-serif;
 }
-body {
-    background-color: #F3F5FC;
+html {
+    height: 100%;
 }
-main {
+body {
+    background-color: #fffaff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+header {
+    display: flex;   
     width: 1100px;
     margin: 0 auto;
 }
@@ -12,20 +19,45 @@ main {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 40px 0 0 40px;
+    margin: 40px 2em 0 0;
+}
+nav ul{
+    display: flex;
+    margin: 7vh 0 0 40px;
+}
+.nav-item {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    margin-right: 2em;
+}
+.nav-item a{
+    text-decoration: none;
+    color: #191B40;
+}
+.nav-item a:hover {
+    color: #F2A74B;
+    transition: 0.3s;
+}
+main {
+    width: 1100px;
+    margin: 0 auto;
+    flex: 1 0 auto;
 }
 .decodificador-input {
     position: relative;
-    margin: 120px 0 0 0;
+    margin: 11.5vh 0 0 0;
 }
 #dc-input {
     width: 680px;
+    height: 100%;
+    max-height: 50vh;
     background: transparent;
     border: none;
     resize: none;
     font-size: 26px;
     line-height: 48px;
-    color: #0A3871;
+    color: #492073;
 }
 .campo-resultado {
     display: flex;
@@ -34,7 +66,7 @@ main {
     justify-content: center;
     box-sizing: border-box;
     position: absolute;
-    top: 40px;
+    top: 60px;
     left: 60%;
     padding: 2%;
     background: white;
@@ -50,7 +82,7 @@ main {
     line-height: 150%;
     color: #495057;
     text-align: left;
-    height: 85%;
+    height: 80%;
     overflow: scroll;
 }
 .not_found h3 {
@@ -74,8 +106,11 @@ main {
     width: 336px;
     height: 67px;
     margin-top: 3em;
-    border: 1px solid #0A3871;
+    border: 1px solid #492073;
     border-radius: 24px;
+}
+.button-area {
+    margin-bottom: 10em;
 }
 .button-area p {
     font-size: 12px;
@@ -89,32 +124,51 @@ main {
     margin-right: 8px;
 }
 #cripto-button {
-    background-color: #0A3871;
+    background-color: #492073;
     color: white;
     width: 328px;
     height: 67px;
     padding: 24px;
     margin-right: 24px;
-    border: 1px solid #0A3871;
+    border: 1px solid #492073;
     border-radius: 24px;
 }
 #cripto-button:active {
-    background-color: #D8DFE8;
-    color: #0A3871;
+    background-color: #FFF5FF;
+    color: #492073;
+    border-color: #F2A74B;
 }
 #decode-button {
-    background-color: #D8DFE8;
-    color: #0A3871;
+    background-color: #FFF5FF;
+    color: #492073;
     width: 328px;
     height: 67px;
     padding: 24px;
     margin-right: 24px;
-    border: 1px solid #0A3871;
+    border: 1px solid #191B40;
     border-radius: 24px;
 }
 #decode-button:active, .copy-button:active {
-    background-color: #0A3871;
-    color: white;
+    background-color: #F2A74B;
+    color: #191B40;
+}
+footer {
+    box-sizing: border-box;
+    background: #492073;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+
+}
+.footer {
+    text-align: center;
+    color: #fffaff;
+    padding: 2em;
+}
+.footer a {
+    text-decoration: none;
+    color: #F2A74B;
+    font-weight: 500;
+    flex-shrink: 0;
 }
 
 @media screen and (max-width: 810px) {

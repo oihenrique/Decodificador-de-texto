@@ -8,16 +8,27 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 
+    <link rel="shortcut icon" href="assets/logo_favicon.svg" type="image/x-icon">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 
     <script src="js/script.js"></script>
 
-    <title>Decodificador de texto</title>
+    <title>Turing Project - Decodificador</title>
 </head>
 <body>
-    <h1><a href="index.html"><img class="logo" src="assets/logo.svg" alt="Logo"></a></h1>
+    <header>
+        <h1><a href="index.html"><img class="logo" src="assets/turing_project_logo.svg" alt="Logo" width="150"></a></h1>
+        <nav>
+            <ul>
+                <li class="nav-item"><a href="index.html">Decodificador</a></li>
+                <li class="nav-item"><a href="alan-turing.html">Sobre Alan Turing</a></li>
+                <li class="nav-item"><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
         <div class="decodificador-input">
             <div>
@@ -30,7 +41,7 @@
             </div>
         </div>
         <div class="campo-resultado">
-            <img class="img-404" src="assets/High quality products 1 1.svg" alt="Menino procurando algo com uma lupa na mão.">
+            <img class="img-404" src="assets/searching_purple.svg" alt="Menino procurando algo com uma lupa na mão.">
             <p class="resultado-decodificado" id="resultado"></p>
             <div class="not_found">
                 <h3>Nenhuma mensagem encontrada</h3>
@@ -39,5 +50,10 @@
             <button class="copy-button" onclick="copy(document.getElementById('resultado').innerHTML)">Copy</button>
         </div>
     </main>
+    <footer>
+        <div class="footer">
+            <p>Site feito por <a href="https://github.com/oihenrique" target="_blank">Henrique Gomes</a>.</p>
+        </div>
+    </footer>
 </body>
 </html>
