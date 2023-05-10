@@ -21,7 +21,11 @@ header {
     align-items: flex-start;
     margin: 40px 2em 0 0;
 }
-nav ul{
+#menu-icon {
+    display: none;
+    cursor: pointer;
+}
+#navItens ul{
     display: flex;
     margin: 7vh 0 0 40px;
 }
@@ -58,7 +62,7 @@ main {
 }
 .turing-img {
     width: 200px;
-    height:300px;
+    height: 300px;
     margin: 6.5em 3em 0 0;
 }
 figcaption {
@@ -95,4 +99,64 @@ footer {
     color: #F2A74B;
     font-weight: 500;
     flex-shrink: 0;
+}
+
+@media screen and (max-width: 1150px) {
+    header {
+        display: flex;
+        align-items: center;
+        width: 680px;
+        padding: 0 2em;
+        margin: 0 auto 4em;
+    }
+    main {
+        box-sizing: border-box;
+        width: 800px;
+        padding: 0 2em;
+    }
+}
+@media screen and (max-width: 810px) {
+    header {
+        position: relative;
+    }
+    #navItens {
+        width: min-content;
+        display: none;
+        position: absolute;
+        z-index: 9998;
+        top: 46px;
+        right: 5.5vh;
+        background: #F2A74B;
+    }
+    #navItens ul {
+        box-sizing: border-box;
+        display: block;
+    }
+    #navItens li {
+        margin-bottom: 1em;
+        text-align: right;
+        color: #191B40;
+    }
+    #menu-icon {
+        display: block;
+        position: fixed;
+        right: 20px;
+        z-index: 9999;
+        background: #F2A74B;
+        color: #191B40;
+        border-radius: 2px;
+        margin: 1.2em 1em 0 0;
+    }
+    .turing-img {
+        width: 130px;
+        height: 200px;
+    }
+    main {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 810px) {
+    figure {
+        display: none;
+    }
 }

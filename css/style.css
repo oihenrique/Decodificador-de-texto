@@ -21,7 +21,11 @@ header {
     align-items: flex-start;
     margin: 40px 2em 0 0;
 }
-nav ul{
+#menu-icon {
+    display: none;
+    cursor: pointer;
+}
+#navItens ul{
     display: flex;
     margin: 7vh 0 0 40px;
 }
@@ -108,6 +112,7 @@ main {
     margin-top: 3em;
     border: 1px solid #492073;
     border-radius: 24px;
+    cursor: pointer;
 }
 .button-area {
     margin-bottom: 10em;
@@ -132,6 +137,7 @@ main {
     margin-right: 24px;
     border: 1px solid #492073;
     border-radius: 24px;
+    cursor: pointer;
 }
 #cripto-button:active {
     background-color: #FFF5FF;
@@ -147,6 +153,7 @@ main {
     margin-right: 24px;
     border: 1px solid #191B40;
     border-radius: 24px;
+    cursor: pointer;
 }
 #decode-button:active, .copy-button:active {
     background-color: #F2A74B;
@@ -171,9 +178,13 @@ footer {
     flex-shrink: 0;
 }
 
-@media screen and (max-width: 810px) {
-    .logo {
-        margin: 74px 0 0 0;
+@media screen and (max-width: 1150px) {
+    header {
+        display: flex;
+        align-items: center;
+        width: 680px;
+        padding: 0 3.5em;
+        margin: 0 auto;
     }
     main {
         box-sizing: border-box;
@@ -195,7 +206,7 @@ footer {
     }
     .campo-resultado {
         position: static;
-        margin: 64px 0 0 0;
+        margin: 64px 0;
         width: 100%;
         padding: 32px;
     }
@@ -213,13 +224,47 @@ footer {
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 750px) {
     .logo {
         margin-top: 24px;
     }
+    header {
+        position: relative;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+    }
+    #navItens {
+        width: min-content;
+        display: none;
+        position: absolute;
+        z-index: 9998;
+        top: 40px;
+        right: 10vh;
+        background: #F2A74B;
+    }
+    #navItens ul {
+        box-sizing: border-box;
+        display: block;
+    }
+    #navItens li {
+        margin-bottom: 1em;
+        text-align: right;
+        color: #191B40;
+    }
+    #menu-icon {
+        display: block;
+        position: fixed;
+        right: 20px;
+        z-index: 9999;
+        background: #F2A74B;
+        color: #191B40;
+        border-radius: 2px;
+        margin: 1.2em 1em 0 0;
+    }
     main {
         box-sizing: border-box;
-        width: 100%;
+        width: 90%;
         padding: 0 2em;
     }
     #dc-input {

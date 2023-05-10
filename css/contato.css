@@ -23,6 +23,10 @@ header {
     align-items: flex-start;
     margin: 40px 2em 0 0;
 }
+#menu-icon {
+    display: none;
+    cursor: pointer;
+}
 nav ul{
     display: flex;
     margin: 7vh 0 0 40px;
@@ -145,4 +149,66 @@ footer {
     color: #F2A74B;
     font-weight: 500;
     flex-shrink: 0;
+}
+
+@media screen and (max-width: 1250px) {
+    header {
+        display: flex;
+        align-items: center;
+        width: 680px;
+        padding: 0 2em;
+        margin: 0 auto 4em;
+    }
+    .container {
+        display: inline-block;
+    }
+    .image-box {
+        margin: 0 auto 1rem auto;
+    }
+}
+@media screen and (max-width: 810px) {
+    header {
+        position: relative;
+    }
+    .container {
+        width: 100%;
+    }
+    #navItens {
+        width: min-content;
+        display: none;
+        position: absolute;
+        z-index: 9998;
+        top: 46px;
+        right: 3.2vh;
+        background: #F2A74B;
+    }
+    #navItens ul {
+        box-sizing: border-box;
+        display: block;
+    }
+    #navItens li {
+        margin-bottom: 1em;
+        text-align: right;
+        color: #191B40;
+    }
+    #menu-icon {
+        display: block;
+        position: fixed;
+        right: 20px;
+        z-index: 9999;
+        background: #F2A74B;
+        color: #191B40;
+        border-radius: 2px;
+        margin: 1.2em 1em 0 0;
+    }
+    .form-box {
+        width: 70%;
+        padding: 1em;
+    }
+    form textarea {
+        height: 100px;
+    }
+    .image-box {
+        width: 300px;
+    }
 }
