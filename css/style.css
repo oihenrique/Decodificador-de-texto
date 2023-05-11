@@ -1,9 +1,6 @@
 * {
     font-family: 'Poppins', sans-serif;
 }
-html {
-    height: 100%;
-}
 body {
     background-color: #fffaff;
     display: flex;
@@ -228,19 +225,13 @@ footer {
     .logo {
         margin-top: 24px;
     }
-    header {
-        position: relative;
-        align-items: center;
-        justify-content: space-between;
-        width: 90%;
-    }
     #navItens {
         width: min-content;
-        display: none;
         position: absolute;
+        display: none;
         z-index: 9998;
-        top: 40px;
-        right: 10vh;
+        top: 4.5vh;
+        right: 7.5vw;
         background: #F2A74B;
     }
     #navItens ul {
@@ -254,8 +245,8 @@ footer {
     }
     #menu-icon {
         display: block;
-        position: fixed;
-        right: 20px;
+        position: absolute;
+        right: 5%;
         z-index: 9999;
         background: #F2A74B;
         color: #191B40;
